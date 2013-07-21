@@ -1,0 +1,6 @@
+@charset "utf-8";
+body { font:normal 12px Arial, Helvetica, sans-serif; background-color: #B3C1CE; }
+div { text-align:center; }
+#title { font-size:18px; }
+#subtitle { font-size:15px; font-weight:bold }
+.box { background-color: #326488; padding:15px; color: #FFF; }

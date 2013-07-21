@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<title>Bruno Filippone's Django/GAE JSON REST Web Service Sample</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="{{MEDIA_URL}}css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div>
+    <p id="title">
+      <strong>Welcome to <a href="http://www.b-fil.com" target="_blank">Bruno Filippone</a>'s Django REST Web Service Sample<br />
+        running on Google App Engine</strong>
+    </p>
+    
+    <p>
+      &nbsp;
+    </p>
+    
+    <p id="subtitle">
+      Web Service API
+    </p>
+    
+    <p>
+      &nbsp;
+    </p>
+    
+    <p>
+      <strong>User Registration URL:</strong> api/registration/<br>
+    </p>
+    <p>
+      <i>Sample POST Request:</i>
+    </p>
+    <p class="box">
+      { "username": "Bruno", "email": "bruno.filippone@b-fil.com", "password": "my_secret_password" }
+    </p>
+    
+    <p>
+      &nbsp;
+    </p>
+    
+    <p>
+      <strong>Messaging URL:</strong> api/messaging/ (Requires Basic Authentication)<br>
+    </p>
+    <p>
+      <i>Sample GET Request:</i><br />
+    </p>
+    <p class="box">
+      api/messaging/?to_user=Bruno
+    </p>
+    
+    <p>
+      <i>Sample POST Request:</i><br />
+    </p>
+    <p class="box">
+      { "to_user": "God", "message": "Hi God!" }
+    </p>
+    
+  </div>
+</body>
+</html>

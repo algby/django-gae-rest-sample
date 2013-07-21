@@ -1,0 +1,32 @@
+application: django-gae-rest-sample
+version: 1
+runtime: python
+api_version: 1
+
+builtins:
+- remote_api: on
+
+inbound_services:
+- warmup
+
+handlers:
+- url: /_ah/queue/deferred
+  script: lib/djangoappengine/deferred/handler.py
+  login: admin
+
+- url: /_ah/stats/.*
+  script: lib/djangoappengine/appstats/ui.py
+
+- url: /media/admin
+  static_dir: lib/django/contrib/admin/media
+  expiration: '0'
+  
+- url: /media
+  static_dir: media/
+
+- url: /favicon.ico
+  static_files: media/favicon.ico
+  upload: media/favicon.ico
+
+- url: /.*
+  script: lib/djangoappengine/main/main.py
